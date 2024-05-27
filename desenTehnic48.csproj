@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{B58D7F9D-DAB9-43FF-8A5C-3BA4BDC94389}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>desenTehnic48</RootNamespace>
+    <AssemblyName>desenTehnic48</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="corpuri\cilindru.cs" />
+    <Compile Include="corpuri\conic.cs" />
+    <Compile Include="corpuri\corp.cs" />
+    <Compile Include="corpuri\cub.cs" />
+    <Compile Include="corpuri\model.cs" />
+    <Compile Include="corpuri\mul.cs" />
+    <Compile Include="corpuri\piramida.cs" />
+    <Compile Include="corpuri\prisma.cs" />
+    <Compile Include="corpuri\punct3d.cs" />
+    <Compile Include="corpuri\sfera.cs" />
+    <Compile Include="desene\desen.cs" />
+    <Compile Include="desene\desenlascara.cs" />
+    <Compile Include="desene\epura.cs" />
+    <Compile Include="desene\grafic.cs" />
+    <Compile Include="desene\ruptura.cs" />
+    <Compile Include="desene\schema.cs" />
+    <Compile Include="desene\schita.cs" />
+    <Compile Include="desene\sectiune.cs" />
+    <Compile Include="desene\vedere.cs" />
+    <Compile Include="forme\arc.cs" />
+    <Compile Include="forme\bolta.cs" />
+    <Compile Include="forme\cerc.cs" />
+    <Compile Include="forme\curba.cs" />
+    <Compile Include="forme\dreptunghi.cs" />
+    <Compile Include="forme\elipsa.cs" />
+    <Compile Include="forme\figura.cs" />
+    <Compile Include="forme\forma.cs" />
+    <Compile Include="forme\linie.cs" />
+    <Compile Include="forme\linieajutatoare.cs" />
+    <Compile Include="forme\nGon.cs" />
+    <Compile Include="forme\oval.cs" />
+    <Compile Include="forme\patrulater.cs" />
+    <Compile Include="forme\plan.cs" />
+    <Compile Include="forme\profil.cs" />
+    <Compile Include="forme\punct2d.cs" />
+    <Compile Include="forme\racord.cs" />
+    <Compile Include="forme\romb.cs" />
+    <Compile Include="forme\shape.cs" />
+    <Compile Include="forme\triunghi.cs" />
+    <Compile Include="forme\unghi.cs" />
+    <Compile Include="instrumente\compas.cs" />
+    <Compile Include="instrumente\creion.cs" />
+    <Compile Include="instrumente\echer.cs" />
+    <Compile Include="instrumente\florar.cs" />
+    <Compile Include="instrumente\guma.cs" />
+    <Compile Include="instrumente\instrument.cs" />
+    <Compile Include="instrumente\material.cs" />
+    <Compile Include="instrumente\pix.cs" />
+    <Compile Include="instrumente\raportor.cs" />
+    <Compile Include="instrumente\rigla.cs" />
+    <Compile Include="instrumente\teu.cs" />
+    <Compile Include="instrumente\tus.cs" />
+    <Compile Include="linii\dreapta.cs" />
+    <Compile Include="linii\paralela.cs" />
+    <Compile Include="linii\secanta.cs" />
+    <Compile Include="linii\segment.cs" />
+    <Compile Include="linii\tangenta.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oldCode.cs" />
+    <Compile Include="pagini\coala.cs" />
+    <Compile Include="pagini\hartie.cs" />
+    <Compile Include="pagini\plansa.cs" />
+    <Compile Include="personal\persoana.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="proiectdesentehnic\dt.cs" />
+    <Compile Include="proiectii\perspectiva.cs" />
+    <Compile Include="proiectii\proiectie.cs" />
+    <Compile Include="proiectii\proiectie3d.cs" />
+    <Compile Include="proiectii\sistemdeproiectie.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stocare\dosar.cs" />
+    <Compile Include="texte\caracterpixel.cs" />
+    <Compile Include="texte\indicator.cs" />
+    <Compile Include="texte\litera.cs" />
+    <Compile Include="texte\text.cs" />
+    <Compile Include="unghiuri\ascutit.cs" />
+    <Compile Include="unghiuri\drept.cs" />
+    <Compile Include="unghiuri\obtuz.cs" />
+    <Compile Include="utile\cota.cs" />
+    <Compile Include="utile\dimensiune.cs" />
+    <Compile Include="utile\format.cs" />
+    <Compile Include="utile\grafica.cs" />
+    <Compile Include="utile\grosime.cs" />
+    <Compile Include="utile\pair.cs" />
+    <Compile Include="utile\pereche.cs" />
+    <Compile Include="utile\pozitie.cs" />
+    <Compile Include="utile\pozitie3d.cs" />
+    <Compile Include="utile\scara.cs" />
+    <Compile Include="utile\stasCoalaHartie.cs" />
+    <Compile Include="utile\stil.cs" />
+    <Compile Include="utile\suprafata.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="instrumente" />
+    <Folder Include="forme" />
+    <Folder Include="corpuri" />
+    <Folder Include="desene" />
+    <Folder Include="linii" />
+    <Folder Include="stocare" />
+    <Folder Include="personal" />
+    <Folder Include="proiectii" />
+    <Folder Include="unghiuri" />
+    <Folder Include="proiectdesentehnic" />
+    <Folder Include="utile" />
+    <Folder Include="texte" />
+    <Folder Include="pagini" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
